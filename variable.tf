@@ -10,7 +10,7 @@ variable "region" {
 variable "cluster_version" {
   description = "Kubernetes version to use for the EKS cluster."
   type        = string
-  default     = "1.18"
+  default     = "1.21.2"
 }
 
 variable "vault_user" {
@@ -22,7 +22,7 @@ variable "vault_user" {
 variable "cluster_name" {
   description = "Name of the Kubernetes cluster to create"
   type        = string
-  default     = ""
+  default     = "dea"
 }
 
 variable "force_destroy" {
@@ -40,7 +40,7 @@ variable "is_jx2" {
 variable "jx_git_url" {
   description = "URL for the Jenins X cluster git repository"
   type        = string
-  default = "https://frazergibson@bitbucket.org/jx3test/jx3-terraform-eks-cluster.git"
+  default = ""
 }
 
 variable "jx_bot_username" {
